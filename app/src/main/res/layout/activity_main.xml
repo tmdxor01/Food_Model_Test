@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 버튼: 이미지를 선택하거나 찍기 -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지 선택" />
+
+    <!-- 이미지 뷰: 선택된 이미지 표시 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- 예측 결과를 보여줄 텍스트뷰 -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예측 결과"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Accuracy"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 정확도 테스트 진행 상태 -->
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진행 상황"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- 정확도 테스트 결과 -->
+    <TextView
+        android:id="@+id/testresultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정확도 결과"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- 이미지 전송 버튼 -->
+    <Button
+        android:id="@+id/uploadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지 전송"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 모델 받기 버튼 -->
+    <Button
+        android:id="@+id/downloadModelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모델 받기"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+
+
