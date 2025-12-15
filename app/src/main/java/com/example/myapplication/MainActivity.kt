@@ -159,7 +159,7 @@ class MainActivity : AppCompatActivity() {
     // 모델 파일을 assets에서 로드
     private fun loadModelFile(): MappedByteBuffer {
         try {
-            val fd = assets.openFd("downloaded_model.tflite")
+            val fd = assets.openFd("food_mobilenet_model_800.tflite")
             val inputStream = FileInputStream(fd.fileDescriptor)
             val channel = inputStream.channel
             val startOffset = fd.startOffset
@@ -520,7 +520,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    fun loadClassNames(context: Context, fileName: String = "new_class_names.json"): Map<Int, String> {
+    fun loadClassNames(context: Context, fileName: String = "class_names.json"): Map<Int, String> {
         val jsonStr = context.assets.open(fileName).bufferedReader().use { it.readText() }
         val obj = JSONObject(jsonStr)
         val map = mutableMapOf<Int, String>()
